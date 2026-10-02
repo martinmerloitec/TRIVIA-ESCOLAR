@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Trivia Multiasignatura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- Pantalla de Selección de Asignatura -->
+    <div id="category-screen" class="screen active">
+      <h1>Juego de Trivia</h1>
+      <p>Selecciona una asignatura para comenzar:</p>
+<div class="category-buttons">
+  <button class="btn cat-btn" data-category="historia">📚 Historia</button>
+  <button class="btn cat-btn" data-category="ciencia">🔬 Ciencia</button>
+  <button class="btn cat-btn" data-category="geografia">🌍 Geografía</button>
+  <button class="btn cat-btn" data-category="matematicas">📐 Matemáticas</button>
+  <button class="btn cat-btn" data-category="literatura">📖 Literatura</button>
+  <button class="btn cat-btn" data-category="arte">🎨 Arte</button>
+  <button class="btn cat-btn" data-category="lengua">✍️ Lengua</button>
+  <button class="btn cat-btn" data-category="biologia">🧬 Biología</button>
+  <button class="btn cat-btn" data-category="tecnologia">💻 Tecnología</button>
+  <button class="btn cat-btn" data-category="ingles">🗣️ Inglés</button>
+</div>
+    </div>
+
+    <!-- Pantalla del Juego -->
+    <div id="quiz-screen" class="screen">
+      <div class="quiz-header">
+        <span id="subject-tag">Asignatura</span>
+        <div id="timer">Tiempo: <span id="time-left">10</span>s</div>
+      </div>
+      <div class="progress-bar">
+        <div id="progress" style="width: 0%;"></div>
+      </div>
+      <h2 id="question">Aquí va la pregunta</h2>
+      <div id="options" class="options-container">
+        <!-- Las opciones se generan dinámicamente con JS -->
+      </div>
+    </div>
+
+    <!-- Pantalla de Resultados -->
+    <div id="result-screen" class="screen">
+      <h1>¡Juego Terminado!</h1>
+      <p id="final-score">Obtuviste 0 de 0 puntos</p>
+      <button id="restart-btn" class="btn">Jugar de Nuevo</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
